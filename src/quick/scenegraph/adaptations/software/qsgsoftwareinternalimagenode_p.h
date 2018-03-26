@@ -132,7 +132,7 @@ private:
     QRectF m_innerSourceRect;
     QRectF m_subSourceRect;
 
-    QSGTexture *m_texture;
+    QPointer<QSGTexture> m_texture;
     QPixmap m_cachedMirroredPixmap;
 
     bool m_mirror;
